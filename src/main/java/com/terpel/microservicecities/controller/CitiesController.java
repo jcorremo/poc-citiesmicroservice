@@ -17,7 +17,7 @@ public class CitiesController {
 	 private CitiesRepository repository;
 	
 	 @RequestMapping(value = "/{nombre}", method = RequestMethod.GET)
-	 public Cities getPetById(@PathVariable("name") String nombre) {
+	 public Cities getPetById(@PathVariable("nombre") String nombre) {
 	   return repository.findBynombre(nombre);
 	 }
 	 
